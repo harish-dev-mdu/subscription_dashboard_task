@@ -380,7 +380,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Your Name**
 - GitHub: [https://github.com/harish-dev-mdu]
 - LinkedIn: [https://www.linkedin.com/in/harish-kumar-a-45a60a260/]
-- Email: harishmdu26@example.com
+- Email: harishmdu26@gmail.com
 
 ## 🙏 Acknowledgments
 
