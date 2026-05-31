@@ -1,0 +1,33 @@
+{
+  "name": "subscription-dashboard-task",
+  "version": "1.0.0",
+  "description": "Full Stack SaaS Subscription Management Dashboard",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "seed": "cd server && npm run seed"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "saas",
+    "subscription",
+    "dashboard",
+    "mern",
+    "react",
+    "node",
+    "mongodb"
+  ],
+  "author": "Developer",
+  "license": "MIT"
+}

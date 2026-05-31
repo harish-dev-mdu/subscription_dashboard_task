@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: subscription-dashboard-api
+    env: node
+    region: oregon
+    plan: free
+    branch: main
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_ACCESS_SECRET
+        generateValue: true
+      - key: JWT_REFRESH_SECRET
+        generateValue: true
+      - key: JWT_ACCESS_EXPIRY
+        value: 15m
+      - key: JWT_REFRESH_EXPIRY
+        value: 7d
+      - key: CLIENT_URL
+        sync: false
